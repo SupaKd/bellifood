@@ -1,0 +1,77 @@
+.contact-page {
+    @include flex-center;
+    min-height: 100vh;
+    font-family:'Times New Roman', Times, serif;
+    padding: 2rem;
+    color: #fff;
+  
+    .contact-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: $radius-lg;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: $shadow-md;
+  
+      h1 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color: #111;
+      }
+  
+      p {
+        margin-bottom: 2rem;
+        color: #111;
+      }
+  
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+  
+        .form-group {
+          display: flex;
+          flex-direction: column;
+  
+          label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #111;
+          }
+  
+          input,
+          textarea {
+            padding: 0.8rem;
+            border: 1px solid #111;
+            border-radius: 10px;
+            background: #fff;
+            color: #fff;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+  
+            &:focus {
+              outline: none;
+              background: #eee;
+            }
+          }
+        }
+  
+        button {
+          background: #502414;
+          color: #fff;
+          border: none;
+          padding: 1rem;
+          border-radius: $radius-md;
+          font-weight: bold;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: background 0.3s ease;
+  
+          &:hover {
+            background-color: $valid-color;
+          }
+        }
+      }
+    }
+  }
+  

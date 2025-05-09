@@ -1,0 +1,49 @@
+.category-page {
+    padding: 2rem;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #333;
+    }
+  
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+  
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      }
+  
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+  
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: #222;
+      }
+  
+      p {
+        font-size: 1rem;
+        color: #777;
+      }
+    }
+  }
+  
